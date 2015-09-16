@@ -1,4 +1,8 @@
 public class Hexagon implements Shape {
+	
+	private int NumSide();
+	private double sideLength();
+	
 	public double getWidth() {
 		
 	};
