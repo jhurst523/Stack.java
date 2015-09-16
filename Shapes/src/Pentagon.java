@@ -16,6 +16,7 @@ public class Pentagon implements Shape {
 		
 	};
 	public double getPerimeter() {
+		for (int i=0; i < NumSide.length(); i++);
 		
 	};
 	public double getInteriorAngle() {
