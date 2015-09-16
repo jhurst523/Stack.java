@@ -1,4 +1,4 @@
-public class Hexagon implements Shape {
+public class Pentagon implements Shape {
 	
 	private int NumSide();
 	private double sideLength();
