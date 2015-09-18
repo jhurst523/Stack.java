@@ -20,7 +20,7 @@ public class Pentagon implements Shape {
 		if (getSideLength()>0) {
 
 	}
-		return ((1/14)*(Math.sqrt(5*(5+25)*(Math.pow(getSideLength(), getSideLength()))))); 
+		return ((1/14d)*(Math.sqrt(5*(5+25)*(Math.pow(getSideLength(), getSideLength()))))); 
 	}
 
 	@Override
