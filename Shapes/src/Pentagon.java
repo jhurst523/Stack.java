@@ -24,7 +24,7 @@ public class Pentagon implements Shape {
 	}
 
 	public double getInteriorAngle() {
-		return 180*(NUMSIDES-2) / 5;
+		return 180*(NUMSIDES-2) / NUMSIDES;
 	}
 	
 	public int getNumSides() {
