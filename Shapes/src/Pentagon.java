@@ -1,3 +1,5 @@
+import static java.lang.Math.*;
+
 public class Pentagon implements Shape {
 
 	@Override
@@ -15,7 +17,10 @@ public class Pentagon implements Shape {
 	@Override
 	public double getArea() {
 		// TODO Auto-generated method stub
-		return 0;
+		if (getWidth()>0&getHeight()>0) {
+
+	}
+		return getWidth()*getHeight(); 
 	}
 
 	@Override
@@ -26,17 +31,11 @@ public class Pentagon implements Shape {
 
 	@Override
 	public double getPerimeter() {
-<<<<<<< HEAD
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
-	@Override
-=======
-		for (int i=0; i < NumSide.length(); i++);
-		
-	};
->>>>>>> 24fea00509d0479084deaf37c6423bbaec931275
+	
 	public double getInteriorAngle() {
 		// TODO Auto-generated method stub
 		return 0;
@@ -44,14 +43,17 @@ public class Pentagon implements Shape {
 
 	@Override
 	public int getNumSides() {
+		for (int i=0; i < NumSide.length(); i++);
 		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
 	public double getSideLength() {
-		// TODO Auto-generated method stub
-		return 0;
+		if (getNumSides()>0){
+			// TODO Auto-generated method stu
+	}
+		return getPerimeter()/getNumSides();
 	}
 	
 }
