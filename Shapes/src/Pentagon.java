@@ -1,59 +1,45 @@
-import static java.lang.Math.*;
-
 public class Pentagon implements Shape {
 
-	@Override
+	private double sideLength;
+	private static final int NUMSIDES = 5;
+
 	public double getWidth() {
-		// TODO Auto-generated method stub
-		return 0;
+		return ((sideLength)/(2*Math.tan(36)));
 	}
 
-	@Override
 	public double getHeight() {
-		// TODO Auto-generated method stub
-		return 0;
+		return (((1+Math.sqrt(5))/2)*sideLength);
 	}
 
-	@Override
 	public double getArea() {
+<<<<<<< HEAD
 		// TODO Auto-generated method stub
 		if (getSideLength()>0) {
 
 	}
 		return ((1/14d)*(Math.sqrt(5*(5+25)*(Math.pow(getSideLength(), getSideLength()))))); 
+=======
+		return ((1/2)*Math.sqrt(5*(5+2*Math.sqrt(5)))*(sideLength));
+>>>>>>> 7d0e3cd3416d7c18e9514089bb94249cee3616fa
 	}
 
-	@Override
 	public void setSideLength(double sideLength) {
-		// TODO Auto-generated method stub
-		
+		this.sideLength = sideLength;
 	}
 
-	@Override
 	public double getPerimeter() {
-		// TODO Auto-generated method stub
-		return 0;
+		return sideLength*5;
 	}
 
-	
 	public double getInteriorAngle() {
-		// TODO Auto-generated method stub
-		return 0;
+		return 108;
 	}
 
-	@Override
 	public int getNumSides() {
-		for (int i=0; i < NumSide.length(); i++);
-		// TODO Auto-generated method stub
-		return 0;
+		return NUMSIDES;
 	}
 
-	@Override
 	public double getSideLength() {
-		if (getNumSides()>0){
-			// TODO Auto-generated method stu
+		return sideLength;
 	}
-		return getPerimeter()/getNumSides();
-	}
-	
 }
