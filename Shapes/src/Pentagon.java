@@ -17,10 +17,10 @@ public class Pentagon implements Shape {
 	@Override
 	public double getArea() {
 		// TODO Auto-generated method stub
-		if (getWidth()>0&getHeight()>0) {
+		if (getSideLength()>0) {
 
 	}
-		return getWidth()*getHeight(); 
+		return ((1/14)*(Math.sqrt(5*(5+25)*(Math.pow(getSideLength(), getSideLength()))))); 
 	}
 
 	@Override
