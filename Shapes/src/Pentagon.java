@@ -12,15 +12,7 @@ public class Pentagon implements Shape {
 	}
 
 	public double getArea() {
-<<<<<<< HEAD
-		// TODO Auto-generated method stub
-		if (getSideLength()>0) {
-
-	}
-		return ((1/14d)*(Math.sqrt(5*(5+25)*(Math.pow(getSideLength(), getSideLength()))))); 
-=======
-		return ((1/2)*Math.sqrt(5*(5+2*Math.sqrt(5)))*(sideLength));
->>>>>>> 7d0e3cd3416d7c18e9514089bb94249cee3616fa
+		return ((1/4)*Math.sqrt(5*(5+2*Math.sqrt(5)))*(sideLength*sideLength));
 	}
 
 	public void setSideLength(double sideLength) {
